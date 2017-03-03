@@ -1,10 +1,27 @@
 package test;
 
+import java.util.TreeSet;
+
 public class Test {
 
-	public static void main(String[] args) {
-		System.out.println("æµ‹è¯•ï¼");
-
-	}
+	public static void main(String[] args) {  
+        // ´´½¨¼¯ºÏ¶ÔÏó  
+        // ×ÔÈ»Ë³Ğò½øĞĞÅÅĞò  
+        TreeSet<Object> ts = new TreeSet<Object>();  
+  
+        // ´´½¨ÔªËØ²¢Ìí¼Ó  
+        // 20,18,23,22,17,24,19,18,24  
+        ts.add("b"); 
+        ts.add("a");
+        ts.add("A");
+        ts.add("c");
+        ts.add("20");  
+        ts.add("18");  
+  
+        // ±éÀú  
+        for (Object i : ts) {  
+            System.out.println(i);  
+        }  
+    }  
 
 }
